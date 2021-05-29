@@ -5,6 +5,7 @@ font-family: 'Krub', sans-serif; */
   --first-color: #434c0b;
   --second-color: #c95557;
   --third-color: #a3afc7;
+  --border-radius: 7px;
 }
 
 h1 {
