@@ -16,6 +16,7 @@ h1 {
 
 .site-logo {
   border: 2px solid var(--first-color);
+  border-radius: 7px;
   display: block;
   height: 35px;
   width: 35px;
