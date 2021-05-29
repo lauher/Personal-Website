@@ -28,14 +28,12 @@ h1 {
   padding-top: 10px;
 }
 
-a {
-  font-family: var(--heading-font-family);
-  font-size: 14px;
-  font-weight: bold;
+.bg-dark {
+  background-color: var(--second-color) !important;
 }
 
 .site-logo {
-  border: 2px solid var(--first-color);
+  border: 1px solid white;
   border-radius: var(--border-radius);
   display: block;
   height: 35px;
@@ -44,6 +42,7 @@ a {
   transform: rotate(0deg);
   transition: transform 0.4s ease-in-out;
 }
+
 .logo-text {
   position: absolute;
   top: 50%;
@@ -57,6 +56,7 @@ a {
   transform-origin: center;
   transition: 0.5s ease-in-out;
 }
+
 .site-logo:hover .logo-text {
   transform: translate(-50%, -50%) rotate(90deg);
   transform-origin: center;
@@ -87,7 +87,13 @@ a {
   position: relative;
 }
 
+.icon-switzerland {
+  color: var(--first-color);
+}
+
 .btn-main {
+  font-family: var(--heading-font-family);
+  font-size: 14px;
   background-color: var(--second-color);
   border-color: var(--second-color);
   color: white;
@@ -100,7 +106,7 @@ a {
   font-weight: bold;
 }
 
-.btn:focus {
+.btn-main:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(67 76 11 / 25%);
 }
