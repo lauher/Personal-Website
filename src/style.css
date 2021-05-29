@@ -1,23 +1,42 @@
-/* font-family: 'KoHo', sans-serif;
-font-family: 'Krub', sans-serif; */
-
 :root {
-  --first-color: #434c0b;
-  --second-color: #c95557;
+  --first-color: #c73a49;
+  --second-color: #434c0b;
   --third-color: #a3afc7;
-  --border-radius: 7px;
+  --highlight-color: #c69306;
+  --border-radius: 4px;
+  --heading-font-family: "KoHo", sans-serif;
+  --default-font-family: "Krub", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--first-color);
+  font-family: var(--heading-font-family);
+  font-weight: 500;
 }
 
 h1 {
-  color: var(--first-color);
-  font-family: "KoHo", sans-serif;
-  font-size: 64px;
-  font-weight: 500;
+  font-size: 96px;
+  color: white;
+  padding-top: 10px;
+}
+
+a {
+  font-family: var(--heading-font-family);
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .site-logo {
   border: 2px solid var(--first-color);
-  border-radius: 7px;
+  border-radius: var(--border-radius);
   display: block;
   height: 35px;
   width: 35px;
@@ -26,9 +45,6 @@ h1 {
   transition: transform 0.4s ease-in-out;
 }
 .logo-text {
-  font-family: "KoHo", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,4 +60,47 @@ h1 {
 .site-logo:hover .logo-text {
   transform: translate(-50%, -50%) rotate(90deg);
   transform-origin: center;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/Hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(70%);
+}
+.hero-content {
+  position: relative;
+}
+
+.btn-main {
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+  color: white;
+  padding: 0 15px;
+}
+.btn-main:hover {
+  color: var(--second-color);
+  background-color: white;
+  border-color: var(--second-color);
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(67 76 11 / 25%);
 }
