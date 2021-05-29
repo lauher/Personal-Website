@@ -1,7 +1,13 @@
+/* font-family: 'KoHo', sans-serif;
+font-family: 'Krub', sans-serif; */
+
 :root {
-  --primary-color: #254823;
-  --secondary-color: red;
+  --primary-color: #a3afc7;
+  --secondary-color: #434c0b;
 }
 h1 {
   color: var(--secondary-color);
+  font-family: "KoHo", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
 }
