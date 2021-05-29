@@ -2,12 +2,44 @@
 font-family: 'Krub', sans-serif; */
 
 :root {
-  --primary-color: #a3afc7;
-  --secondary-color: #434c0b;
+  --first-color: #434c0b;
+  --second-color: #c95557;
+  --third-color: #a3afc7;
 }
+
 h1 {
-  color: var(--secondary-color);
+  color: var(--first-color);
   font-family: "KoHo", sans-serif;
   font-size: 64px;
   font-weight: 500;
+}
+
+.site-logo {
+  border: 2px solid var(--first-color);
+  display: block;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease-in-out;
+}
+.logo-text {
+  font-family: "KoHo", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.site-logo:hover {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
+}
+.site-logo:hover .logo-text {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center;
 }
