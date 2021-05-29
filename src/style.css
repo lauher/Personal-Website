@@ -1,17 +1,21 @@
 :root {
   --first-color: #c73a49;
   --second-color: #434c0b;
-  --third-color: #a3afc7;
+  --third-color: #c1cabd;
   --highlight-color: #c69306;
   --border-radius: 4px;
   --heading-font-family: "KoHo", sans-serif;
   --default-font-family: "Krub", sans-serif;
+  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
 body {
   font-family: var(--default-font-family);
   margin: 0;
-  padding: 0;
+  padding: 56px 0 0 0;
+  background-color: var(--third-color);
 }
 
 h1,
@@ -23,11 +27,13 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
-  color: white;
-  padding-top: 10px;
+  color: var(--second-color);
+  font-size: 55px;
 }
 
+img {
+  width: 300px;
+}
 .bg-dark {
   background-color: var(--second-color) !important;
 }
@@ -65,7 +71,7 @@ h1 {
 .hero {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 56px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,14 +92,19 @@ h1 {
 .hero-content {
   position: relative;
 }
+.hero-content h1 {
+  font-size: 96px;
+  padding-top: 10px;
+  color: white;
+}
 
 .icon-switzerland {
   color: var(--first-color);
 }
 
 .btn-main {
-  font-family: var(--heading-font-family);
-  font-size: 14px;
+  font-family: var(--default-font-family);
+  font-size: 18px;
   background-color: var(--second-color);
   border-color: var(--second-color);
   color: white;
