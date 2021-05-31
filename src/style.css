@@ -1,7 +1,7 @@
 :root {
   --first-color: #c73a49;
   --second-color: #434c0b;
-  --third-color: #c1cabd;
+  --third-color: #aaaf93;
   --highlight-color: #c69306;
   --border-radius: 4px;
   --heading-font-family: "KoHo", sans-serif;
@@ -15,7 +15,6 @@ body {
   font-family: var(--default-font-family);
   margin: 0;
   padding: 56px 0 0 0;
-  background-color: var(--third-color);
 }
 
 h1,
@@ -34,6 +33,11 @@ h1 {
 img {
   width: 300px;
 }
+
+p {
+  line-height: 30px;
+}
+
 .bg-dark {
   background-color: var(--second-color) !important;
 }
@@ -42,6 +46,7 @@ img {
   border: 1px solid white;
   border-radius: var(--border-radius);
   display: block;
+  margin-left: 8px;
   height: 35px;
   width: 35px;
   position: relative;
@@ -120,4 +125,8 @@ img {
 .btn-main:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(67 76 11 / 25%);
+}
+
+.header {
+  background-color: #f7f2d5;
 }
