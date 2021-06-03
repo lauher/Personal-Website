@@ -1,8 +1,8 @@
 :root {
   --first-color: #c73a49;
-  --second-color: #434c0b;
-  --third-color: #aaaf93;
-  --highlight-color: #c69306;
+  --second-color: #727e27;
+  --header-color: #f7f2d5;
+  --background-color: #d4dbea;
   --border-radius: 4px;
   --heading-font-family: "KoHo", sans-serif;
   --default-font-family: "Krub", sans-serif;
@@ -132,7 +132,16 @@ p {
 }
 
 .header {
-  background-color: #f7f2d5;
+  background-color: var(--header-color);
+}
+
+.project-image {
+  height: 350px;
+  width: auto;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
