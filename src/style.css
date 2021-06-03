@@ -38,18 +38,6 @@ p {
   line-height: 30px;
 }
 
-a,
-a:visited {
-  color: var(--second-color);
-  text-decoration: none;
-}
-a:hover {
-  color: var(--first-color);
-}
-a:active {
-  color: var(--header-color);
-}
-
 .bg-dark {
   background-color: var(--second-color) !important;
 }
@@ -163,6 +151,20 @@ a:active {
 
 .contact h3 {
   font-size: 35px;
+}
+
+.contact a,
+.contact a:visited {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: var(--first-color);
+}
+
+.contact a:active {
+  color: var(--header-color);
 }
 
 @media (max-width: 768px) {
