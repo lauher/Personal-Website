@@ -43,7 +43,7 @@ p {
 }
 
 footer {
-  margin: 60px 0 30px 0;
+  margin: 48px 0 30px 0;
 }
 
 .bg-dark {
@@ -227,11 +227,12 @@ footer {
   font-size: 15px;
 }
 
+.about-skills i,
 .contact h3 {
   font-size: 35px;
 }
 
-.about-skills i {
+ {
   color: var(--first-color);
   font-size: xx-large;
 }
@@ -261,6 +262,9 @@ footer {
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 55px;
+  }
+  .header p {
+    font-size: smaller;
   }
   .project-content,
   .about-content {
