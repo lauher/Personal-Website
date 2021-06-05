@@ -168,9 +168,7 @@ footer {
 .project-image {
   height: 350px;
   width: auto;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-    0 16px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--box-shadow);
   margin: 0 auto;
 }
 
@@ -233,6 +231,33 @@ footer {
 
 .contact h3 {
   font-size: 35px;
+}
+
+.about-skills i {
+  color: var(--first-color);
+  font-size: xx-large;
+}
+
+.progress-bar {
+  background-color: var(--second-color);
+}
+
+.accordion-item a {
+  color: var(--first-color);
+}
+
+.accordion-button:focus {
+  border-color: var(--second-color);
+  box-shadow: 0 0 0 0.25rem rgb(67 76 11 / 25%);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--second-color);
+  background-color: var(--header-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c73a49'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 @media (max-width: 768px) {
