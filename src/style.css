@@ -232,11 +232,6 @@ footer {
   font-size: 35px;
 }
 
- {
-  color: var(--first-color);
-  font-size: xx-large;
-}
-
 .progress-bar {
   background-color: var(--second-color);
 }
