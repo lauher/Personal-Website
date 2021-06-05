@@ -30,12 +30,20 @@ h1 {
   font-size: 55px;
 }
 
+h4 {
+  color: var(--second-color);
+  font-size: 26px;
+}
 img {
   width: 300px;
 }
 
 p {
   line-height: 30px;
+}
+
+footer {
+  margin: 60px 0 30px 0;
 }
 
 .bg-dark {
@@ -118,6 +126,7 @@ p {
   border-color: var(--second-color);
   color: white;
   padding: 0 15px;
+  transition: all 150ms ease-in-out;
 }
 .btn-main:hover {
   color: var(--second-color);
@@ -127,6 +136,27 @@ p {
 }
 
 .btn-main:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(67 76 11 / 25%);
+}
+
+.btn-secondary {
+  font-family: var(--default-font-family);
+  font-size: 16px;
+  background-color: white;
+  border-color: var(--second-color);
+  color: var(--first-color);
+  padding: 0 15px;
+  transition: all 150ms ease-in-out;
+}
+.btn-secondary:hover {
+  color: var(--second-color);
+  background-color: white;
+  border-color: var(--second-color);
+  font-weight: bold;
+}
+
+.btn-secondary:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(67 76 11 / 25%);
 }
@@ -144,6 +174,58 @@ p {
   margin: 0 auto;
 }
 
+.footer-contact {
+  background: var(--header-color);
+  padding: 30px;
+  border-radius: var(--border-radius);
+}
+
+.footer-contact p {
+  margin: 0;
+}
+
+.footer-note {
+  font-size: smaller;
+}
+
+.footer-note a,
+.footer-note a:visited,
+.contact a,
+.contact a:visited {
+  color: var(--second-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.footer-note a:hover,
+.contact a:hover {
+  color: var(--first-color);
+}
+
+.footer-note a:active .contact a:active {
+  color: var(--header-color);
+}
+
+.social-links a,
+.social-links a:visited {
+  color: var(--first-color);
+  text-decoration: none;
+  margin: 0 10px;
+  background: var(--header-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+.social-links a:hover {
+  color: white;
+  background: var(--first-color);
+}
+
+.social-links a:active {
+  color: var(--header-color);
+}
+
 .contact h2 {
   color: var(--second-color);
   font-size: 15px;
@@ -151,20 +233,6 @@ p {
 
 .contact h3 {
   font-size: 35px;
-}
-
-.contact a,
-.contact a:visited {
-  color: var(--second-color);
-  text-decoration: none;
-}
-
-.contact a:hover {
-  color: var(--first-color);
-}
-
-.contact a:active {
-  color: var(--header-color);
 }
 
 @media (max-width: 768px) {
